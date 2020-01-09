@@ -1,0 +1,19 @@
+img {
+    border-radius: 50%;
+}
+
+.user-avatar {
+    width: 60px;
+}
+
+.outgoing-avatar {
+    align-self: flex-start;
+    margin-left: 40px;
+    margin-bottom: -20px;
+}
+
+.incoming-avatar {
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-bottom: -20px;
+}

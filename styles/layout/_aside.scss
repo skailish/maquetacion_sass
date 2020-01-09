@@ -1,0 +1,54 @@
+.chat-window {
+    display: flex;
+    width: 100%;
+}
+
+.contact-list-section {
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $contact-list-bk-color;
+}
+
+.userinfo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+
+    .username {
+        font-weight: bold;
+        color: #555;
+    }
+}
+
+.chat-messages-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: $border;
+    border-right: $border;
+    padding-top: 40px;
+}
+
+.calling-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: $border;
+}
+
+.calling-actions-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}

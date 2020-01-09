@@ -1,0 +1,12 @@
+button {
+    border-radius: 50px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    &.call {
+        background-color: $call-button-color;
+    }
+    &.end-call {
+        background-color: $endcall-button-color;
+    }
+}
