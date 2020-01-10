@@ -7,10 +7,16 @@
     margin-top: 40px;
     padding: 20px 40px;
     box-sizing: border-box;
+    background-color: white;
 
     input {
         width: 100%;
         margin: 0 10px;
     }
-
+    @media (max-width: $break-large) {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+    }
 }

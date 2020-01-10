@@ -15,11 +15,16 @@ body {
 
 .contact-list-section {
   display: flex;
-  width: 10%;
+  min-width: 100px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-color: #c6c8d7;
+}
+@media screen and (max-width: 700px) {
+  .contact-list-section {
+    display: none;
+  }
 }
 
 .userinfo-container {
@@ -37,12 +42,18 @@ body {
 
 .chat-messages-section {
   width: 70%;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: 2px solid #ccc;
   border-right: 2px solid #ccc;
   padding-top: 40px;
+}
+@media (max-width: 700px) {
+  .chat-messages-section {
+    width: 100%;
+  }
 }
 
 .calling-section {
@@ -52,6 +63,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
   border-top: 2px solid #ccc;
+}
+@media screen and (max-width: 700px) {
+  .calling-section {
+    display: none;
+  }
 }
 
 .calling-actions-container {
@@ -70,6 +86,14 @@ header {
 .main-header {
   height: 30px;
   padding: 25px;
+  border-bottom: 2px solid #ccc;
+  background-color: white;
+}
+@media (max-width: 700px) {
+  .main-header {
+    position: fixed;
+    width: 100%;
+  }
 }
 
 .calling-section-header {
@@ -89,10 +113,18 @@ header {
   margin-top: 40px;
   padding: 20px 40px;
   box-sizing: border-box;
+  background-color: white;
 }
 .message-footer input {
   width: 100%;
   margin: 0 10px;
+}
+@media (max-width: 700px) {
+  .message-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 button {
@@ -110,6 +142,7 @@ button.end-call {
 
 img {
   border-radius: 50%;
+  margin-top: 20px;
 }
 
 .user-avatar {
